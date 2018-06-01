@@ -73,7 +73,7 @@ def liwc_svm(label_file_name, feature_file_name):
             # print y_train.shape, y_test.shape
 
             # print 'SVC begins'   # SVC模型
-            clf = SVC(kernel="rbf")
+            clf = SVC(kernel="linear")   # linear为线性，rbf为非线性
             # print 'SVC-fit begins'
             clf.fit(X_train, y_train)
             # print 'SVC-predict begins'
